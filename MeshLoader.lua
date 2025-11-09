@@ -131,7 +131,7 @@ else
                         if loadMesh() then
                             setHoloMesh(holo, meshLoadedFromObj, texture)
                             holo:setScale(Vector(meshScale))
-                            print("Finished loading:", objectNames[k], "with texture:", textureURLs[k], bumpmapURLs[k])
+
                             hook.remove("think",objectNames[k])
                             loadedCount = loadedCount + 1
                             if loadedCount == table.count(objectNames) then
